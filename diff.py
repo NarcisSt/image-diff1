@@ -15,7 +15,7 @@ secondTag = str(args.secondTag)
 syftCommandJson = 'syft -o json ' + image
 syftCommandText = 'syft -o text ' + image
 syftCommand = 'syft ' + image
-sbom = str(os.system(syftCommandText))
+sbom = str(os.system(syftCommandJson))
 
 versions = []
 
